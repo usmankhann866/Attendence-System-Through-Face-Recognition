@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="F:/WEB DEVELOPMENT/JAVASCRIPT/Telusko/Codes/JQUERY UI/jqueryUi/jquery-ui.css">
+    <link rel="stylesheet" href="F:/WEB DEVELOPMENT/JAVASCRIPT/Telusko/Codes/JQUERY UI/jqueryUi/jquery-ui.structure.css">
+    <link rel="stylesheet" href="F:/WEB DEVELOPMENT/JAVASCRIPT/Telusko/Codes/JQUERY UI/jqueryUi/jquery-ui.theme.css">
+
+
+<!-- Javascript Part -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="script.js"></script>
+    <script src="F:\WEB DEVELOPMENT\JAVASCRIPT\Telusko\Codes\JQUERY Work\jquery.js"></script>
+    <script src="F:/WEB DEVELOPMENT/JAVASCRIPT/Telusko/Codes/JQUERY UI/jqueryUi/jquery-ui.js"></script>
+
+    <script>
+        // show password option
+
+//         $(".toggle-password").click(function() {
+
+//         $(this).toggleClass("fa-eye fa-eye-slash");
+//         var input = $($(this).attr("toggle"));
+        
+//     if (input.attr("type") == "password") {
+          
+//             input.attr("type", "text");
+//   }   
+//     else {
+  
+//     input.attr("type", "password");
+// }
+// });
+
+
+// tooltip for inputs and button fields
+
+$(document).ready(function(){    
+ 
+ $("#uName").tooltip({
+ 
+          track:true,
+          content: "Your Username contain alphabet, numbers, underscore, dot",
+          show: {effect: "highlight", duration: "4000"},
+          hide: {effect: "explode", duration: "4000"}
+ 
+         });
+ 
+ $("#pwd").tooltip({
+ 
+          track:true,
+          content: "Your Password length must be greater than 7",
+          show: {effect: "highlight", duration: "5000"},
+          hide: {effect: "explode",   duration: "4000"}
+ 
+         });
+ 
+ $("#btn").tooltip({
+ 
+          track:true,
+          content: "submit the form after filling",
+          show: {effect: "highlight", duration: "4000"},
+          hide: {effect: "explode",   duration: "4000"}
+ 
+         });
+        });     
+        
+    </script>
+
+</head>
+<body>
+
+    <!-- Navbar Portion -->
+
+    <header>
+        
+            <nav class="navbar navbar-default fixed-top">
+
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand"><img src="uetp.png" alt="" width="100px" height="100px"><span id="projName">Student Attendance System Through Face Recognition</span> </a>
+                    <div class="navbar navbar-expand-sm">
+
+                    <ul class="nav nav-navbar navbar-right">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a> </li>
+                        <li class="nav-item"><a href="F:\WEB DEVELOPMENT\Small Projects\Software Engineering Project\About\About.html" class="nav-link">About</a> </li>
+                        <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Departments</a>
+                        
+                            <ul class="dropdown-menu">
+                               
+                                <li class="dropdown-item "><a href="#" class="text-secondary">Computer Science & IT</a> </li>
+                                <li class="dropdown-item"><a href="#" class="text-secondary">Computer System Engineering </a> </li>
+                                <li class="dropdown-item"><a href="#" class="text-secondary">Mechatronics Engineering </a> </li>
+                                <li class="dropdown-item"><a href="#" class="text-secondary">Electrical Engineering </a> </li>
+                                <li class="dropdown-item"><a href="#" class="text-secondary">Mechinical Engineering </a> </li>
+                                <li class="dropdown-item"><a href="#" class="text-secondary">Civil Engineering </a> </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contects</a>
+                        
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="https://www.uetpeshawar.edu.pk/" class="text-secondary" target="blank">emailhelp@uetpeshawar.edu.pk</a> </li>
+                                <li class="dropdown-item"><a href="#" class="text-secondary">+92-321-9122761</a> </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-search"></i></a> </li>
+     
+                    </ul>    
+
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    
+    <!-- Apply form -->
+
+    <div class="container-fluid">
+        <img src="p1 (1).jpg" alt="" width="100%" >
+        <div class="carousel-caption" class="centered">
+        <div class="wrapper">
+            <h2>Teacher Login</h2>
+            
+            <div id="error_message"></div>
+
+            <form id="myForm" action="F:\WEB DEVELOPMENT\Small Projects\Software Engineering Project\Streaming Page\stream.html" onsubmit="return Validation()"  method="post"  action="connection.php">
+                <label for="Email" id="lbl">Email</label>
+                <div>
+                    
+                    <input type="text" id="uName" placeholder="Enter Your Email" title="">
+                    <i class="far fa-envelope"></i>
+                
+                </div><br><br>
+
+                <label for="password" id="lbl2">Password</label>
+                <div>
+                   
+                    <input type="password" id="pwd" placeholder="Enter Your Password" title="">
+                    <i class="fa fa-eye showpwd" id="myPass" onClick="showPwd('pwd', this)"></i>
+                    
+                </div><br><br>
+
+                <button type="submit" name="submit" id="btn" title="">Log In</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+</body>
+
+</html>
+
+
+
+
+

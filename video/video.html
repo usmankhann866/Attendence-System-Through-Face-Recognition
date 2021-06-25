@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Page</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+   <style>
+
+       *{
+           margin: 0%;
+           padding: 0%;
+
+       }
+
+       body{
+           /* background-color: aqua; */
+       }
+
+     #container{
+        /* background-color: #666; */
+       margin: 0px auto;
+       width: 600px;
+       width-:;
+       height: 375px;
+       border: 10px solid gray;
+       margin-top: 10%;
+       /* transform: translate(-10%, -10%); */
+       border-radius: 5px;
+    } 
+
+    #videoElement{
+         
+          width: 580px; 
+          height: 375px;
+          /* background-color: #666; */
+          /* border: 2px solid;
+          border-radius: 5px;
+          border-bottom-width: 580px; */
+          
+        } 
+   </style>
+
+
+</head>
+<body>
+    
+<div id="container">
+
+      <video autoplay= "true" id="videoElement"></video>
+      <!-- <canvas id="canvas"></canvas><br>
+      <button onclick="snap();">Snap</button> -->
+</div>
+
+
+<script>
+    var video = document.querySelector('#videoElement');
+// var canvas = document.getElementById('canvas');
+// var context = convas.getContext('2d');
+
+navigator.getUserMedia = navigator.getUserMedia||navigator.webkitGetUserMedia||navigator.mozGetUserMedia||navigator.msGetUserMedia||navigator.oGetUserMedia;
+
+if (navigator.getUserMedia){
+
+    navigator.getUserMedia({video:true}, handleVideo, videoError);
+}
+
+function handleVideo(stream){
+
+    video.src= window.URL.createObjectURL(stream);
+    // video.play();
+}
+
+function videoError(e) {
+//    alert(e.name); 
+}
+</script>
+</body>
+</html>

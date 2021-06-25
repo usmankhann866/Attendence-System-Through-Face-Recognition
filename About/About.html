@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <style>
+
+        body{
+           
+              background-image: url('bg1.jpg');
+             /* background-color: black; */
+        }
+
+        
+        nav li a{
+
+          background-color:;
+          color: cornsilk;
+          font-family:'Times New Roman', Times, serif;
+          font-size: 20px;
+          list-style-type: none;
+        }
+
+        nav li a:hover{
+
+          color: darkorange;
+          border: 2px solid;
+          border-radius: 5px;
+
+        }        
+
+
+        #projName{
+
+          font-size: 30px;
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          padding-left: 10px;
+          color: cornsilk;
+        }
+
+        #text{
+
+         margin-top: 6%;
+         color: white;
+         text-align: center;
+         /* float: left; */
+         font-size: 22px;
+         font-family: 'Times New Roman', Times, serif;
+         text-align: justify;        
+        
+        }
+
+        .members{
+
+          border: 2px solid goldenrod;
+          transform: translate(0%, 0%);
+          color: white;
+          margin-top: 4%;
+        }
+
+        .div{
+           
+          height: 70%;
+          width: 500px;
+          display: inline-block;
+          text-align: center;
+          /* padding-left: 12%; */
+          margin-bottom: 10%;
+          margin-left: 10%;
+          
+          
+         }
+        
+        .Tdiv{
+
+            border: 2px solid goldenrod;
+            border-radius: 15px;
+            margin-left: 10%;
+            
+           
+        } 
+
+        .Instractor{
+            
+            border: 2px solid goldenrod;
+            border-radius: 15px;
+            margin-left: 50%;
+            padding: 2%;
+
+        }
+
+        .THead{
+
+            font-weight:bold; 
+            font-size: 40px; 
+            text-align: left;
+            color: orange;
+            font-family:fantasy;
+        } 
+
+        .THead2{
+
+            font-weight:bold; 
+            font-size: 40px; 
+            text-align: center;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color:orange;
+        }        
+        
+        #instructor{
+
+            margin-left: 23%;
+            
+        }
+
+        img{
+            border: 2px solid wheat;
+            border-radius: 15px;
+            margin-top: 10px;
+        }
+
+        hr{
+ 
+            border: 0.5px solid white;
+        }
+         
+         .para{
+
+             padding-left: 18%;
+             padding-right: 18%;
+         }
+
+    </style>
+
+
+<!-- Javascript Part -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    
+    <script src="F:\WEB DEVELOPMENT\JAVASCRIPT\Telusko\Codes\JQUERY Work\jquery.js"></script>
+    <script src="F:/WEB DEVELOPMENT/JAVASCRIPT/Telusko/Codes/JQUERY UI/jqueryUi/jquery-ui.js"></script>
+
+</head>
+<body>
+
+    <!-- Navbar Portion -->
+
+    <header>
+        
+            <nav class="navbar navbar-default ">
+
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand"><img src="face4.jfif" class="rounded-circle" alt="" width="130px" height="130px"><span id="projName">Student Attendance System Through Face Recognition</span> </a>
+                    <div class="navbar navbar-expand-sm">
+
+                    <ul class="nav nav-navbar navbar-right">
+                        <li class="nav-item"><a href="F:\WEB DEVELOPMENT\Small Projects\Software Engineering Project\Login Page\index.html" class="nav-link"><i class="fas fa-home" title="home"></i></a> </li>
+        
+                        <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Departments</a>
+                        
+                            <ul class="dropdown-menu">
+                               
+                                <li class="dropdown-item "><a href="#" class="text-secondary">Computer Science & IT</a> </li>
+                                <li class="dropdown-item"><a href="#" class="text-secondary">Computer System Engineering </a> </li>
+                                <li class="dropdown-item"><a href="#" class="text-secondary">Mechatronics Engineering </a> </li>
+                                <li class="dropdown-item"><a href="#" class="text-secondary">Electrical Engineering </a> </li>
+                                <li class="dropdown-item"><a href="#" class="text-secondary">Mechinical Engineering </a> </li>
+                                <li class="dropdown-item"><a href="#" class="text-secondary">Civil Engineering </a> </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contects</a>
+                        
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="https://www.uetpeshawar.edu.pk/" class="text-secondary" target="blank">emailhelp@uetpeshawar.edu.pk</a> </li>
+                                <li class="dropdown-item"><a href="#" class="text-secondary">+92-321-9122761</a> </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-search"></i></a> </li>
+     
+                    </ul>    
+
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+       
+       <div id="text">     
+       
+        <h2 class="THead2">About</h2>
+       <p class="para">The main objective of this project is to develop one of the biometric techniques for student’s attendance. 
+          So, the problem arises when we think about the traditional method of taking attendance in the classroom. We
+          have a lot of demerits and have fewer merits. To solve all these issues which we wrote above in demerits we prefer
+          to choose one of the biometric techniques for attendance.
+       </p><br><br>
+        
+       <h2 class="THead2">Description</h2>
+        <p class="para">
+            The face recognition student attendance system emphasizes its simplicity by eliminating classical student attendance
+            marking technique such as calling student names or checking respective identification cards. Furthermore, the face
+            recognition based automated student attendance system able to overcome the problem of fraudulent approach and a lecturer
+            does not have to count the number of students several times to ensure the presence of the students.It detects the face 
+            of a student. After successful recognition of a student, the system automatically updates the attendance in the database. 
+            The proposed system makes the current attendance management systems more efficient by removing calling, marking and entry 
+            of attendance in institution. Face detection project not only detects the face, but also locates the very important facial 
+            features, such as eyes and mouth. These features are crucial to the performance of the facial recognition. 
+            A facial recognition system is a computer software capable to identify or verify a person from a digital frame or a video 
+            frame from a source. One of the ways to do this is by comparing selected faces from the images.
+
+        </p>
+       </div><br><br>
+       <hr>
+        
+
+    <!--Our Instructor-->   
+    <div class="container-fluid members">
+	
+        <h2 class="THead">Our Instructor</h2><br><br>
+       
+        <div class="div" class="col-md-6 mx-auto"  id="instructor">
+
+            <div class="Instractor" >
+       
+                <img src="maam.JFIF" class="Timg"  width="100%" height="30%" class="rounded-circle"><h5 class="h5">Ma'am Ayesha Javed</h5>
+            <b>Department:</b> Computer Science & IT.<br>
+            <b>Subject:</b> Software Engineering.<br><br>	
+        </div>
+       
+    </div>
+        </div>
+
+    <!--Team Members-->
+
+    <div class="container-fluid members">
+	
+        <h2 class="THead">Our Team</h2><br><br>
+       
+        <div class="div" class="col-md-6 mx-auto">
+
+            <div class="Tdiv">
+            <img src="usman2.jpg" class="Timg" style="padding-top: 15px;" width="32%" height="18%" class="rounded-circle"><h5 class="h5">Mohammad Usman</h5>
+            <b>Department:</b> Computer Science & IT.<br>
+            <b>Reg No:</b> 18pwbcs0626.<br><br>	
+        </div><br><br>
+
+             <div class="Tdiv">
+            <img src="Taneem.jpg" class="Timg" style="padding-top: 15px;" width="30%" height="18%" class="rounded-circle"><h5 class="heading5">Taneem Ullah Jan</h5>
+            <b>Department:</b> Computer Science & IT.<br>
+            <b>Reg No:</b> 18pwbcs0658.<br>
+        </div>
+        </div>
+        
+        <div class="div" class="col-md-6 mx-auto">  
+            <div class="Tdiv">
+            <img src="Nadir2.jpg" class="Timg" style="padding-top: 13px;" width="38%" height="18%" class="rounded-circle"><h5 class="h5">Nadir Shah</h5>
+            
+            <b>Department:</b> Computer Science & IT.<br>
+            <b>Reg No:</b> 18pwbcs0636.<br>
+        </div><br><br>
+
+            <div class="Tdiv">
+            <img src="Nadir.jpg" style="padding-top: 15px;" class="Timg" width="32%" height="20%" class="rounded-circle"><h5 class="h5">Muhammad Yaseen</h5>
+            
+            <b>Department:</b> Computer Science & IT.<br>
+            <b>Reg No:</b> 18pwbcs0646.<br>
+        </div>
+    </div><br>
+    </div>
+</div>
