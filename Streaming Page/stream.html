@@ -7,13 +7,13 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="F:/WEB DEVELOPMENT/Bootstrap 4/Bootstrap/Bootstrap4/conFusion/node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="F:/WEB DEVELOPMENT/Bootstrap 4/Bootstrap/Bootstrap4/conFusion/node_modules/font-awesome/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="F:/WEB DEVELOPMENT/JAVASCRIPT/Telusko/Codes/JQUERY UI/jqueryUi/jquery-ui.css">
     <link rel="stylesheet" href="F:/WEB DEVELOPMENT/JAVASCRIPT/Telusko/Codes/JQUERY UI/jqueryUi/jquery-ui.structure.css">
     <link rel="stylesheet" href="F:/WEB DEVELOPMENT/JAVASCRIPT/Telusko/Codes/JQUERY UI/jqueryUi/jquery-ui.theme.css">
+    <link rel="stylesheet" href="css/styles.css">
 
 
 <!-- Javascript Part -->
@@ -26,97 +26,27 @@
     <script src="F:/WEB DEVELOPMENT/JAVASCRIPT/Telusko/Codes/JQUERY UI/jqueryUi/jquery-ui.js"></script>
 
 
-<!-- CSS Portion -->
-
-<style>
-          
-body{
-
-padding: 0%;
-margin: 0%;
-overflow: hidden;
-background-color:black;
-}
-
-nav{
-
-background-image: url("p1 (1).jpg");
-margin: 17px;
-padding-top: 100%;
-border: 1px solid lightblue;
-border-radius: 5px;
-
-}
-nav li a{
-
-background-color:;
-color: cornsilk;
-font-family:'Courier New', Courier, monospace;
-font-size: 20px;
-list-style-type: none;
-}
-
-nav li a:hover{
-
-    color: darkorange;
-    border: 2px solid;
-    border-radius: 5px;
-}
-
-
-span{
-
-padding-left: 10px;
-color:cornsilk;
-font-size: 38px;
-font-family:'Times New Roman', Times, serif;
-}
-
-#cam{
-
-padding: 20px;
-width: 30%;
-background-color: white;
-border: 8px solid black;
-transform: translate(-10%, -25%);
-border-radius: 30px;
-
-}
-
-h2{
-
-/* transform: translate(-5%, -100%); */
-margin-bottom: 10%;
-margin-left: -5%;
-font-weight: bold;
-font-family:Georgia, 'Times New Roman', Times, serif;
-color: yellowgreen;
-}
-
-/* #arrow{
-
-margin-bottom: 10%;
-margin-left: -15%;
-color: white;
-} */
-    </style>
 
 </head>
 <body>
 
 
  <!-- Navbar Portion -->
-
- <header>
         
-    <nav  class="navbar navbar-default fixed-top">
+    <nav  class="navbar navbar-dark fixed-top navbar-expand-sm">
 
         <div class="container-fluid">
-            <a href="#" class="navbar-brand"><img src="download (1).jpg" class="rounded-circle" alt="" width="100px" height="100px"><span id="projName">Department Of Computer Science & IT</span> </a>
-            <div class="navbar navbar-expand-sm">
+            <a href="#" class="navbar-brand"><img src="images/download (1).jpg" class="rounded-circle" alt="" width="100px" height="100px"><span id="projName">Department Of Computer Science & IT</span> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Nav">
+            
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <ul class="nav nav-navbar navbar-right">
-                <li class="nav-item"><a href="F:\WEB DEVELOPMENT\Small Projects\Software Engineering Project\Login Page\index.html" class="nav-link"><i class="fas fa-home" title="home"></i></a> </li>
+            
+            <div class="collapse navbar-collapse" id="Nav">
+
+            <ul class="nav nav-navbar navbar-right ml-5">
+                <li class="nav-item"><a href="F:\WEB DEVELOPMENT\Small Projects\Software Engineering Project\Login Page\index.html" class="nav-link"><i class="fa fa-home" title="home"></i></a> </li>
                 <li class="nav-item"><a href="F:\WEB DEVELOPMENT\Small Projects\Software Engineering Project\About\About.html" class="nav-link">About</a> </li>
                 <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Departments</a>
                 
@@ -148,16 +78,119 @@ color: white;
         </div>
 
     </nav>
-</div>
-</header>    
 
-<div class="container-fluid">
 
-    <img src="2.jpg" alt="" width="100%"> 
+<!-- Start of carousel portion -->
 
-    <div class="carousel-caption">
-        <h2>Click Here For Streaming</h2>
-        
-        <a href=""><img src="camera 2.png" id="cam" alt=""></a>
+<div class="container">
+
+    <div class="row row-content">
+        <div class="col">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img class="d-block img-fluid" src="images/facial 1.jpeg" alt="facial">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/Facial 4.jpg" alt="facial 2">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/understanding-facial-recognition-algorithms.jpg" alt="westplatte">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <ol class="carousel-indicators">
+
+            <li data-target="#myCarousel" data-slide-to="0" class="active bg-warning"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class="bg-warning"></li>
+            <li data-target="#myCarousel" data-slide-to="2" class="bg-warning"></li>
+        </ol>
+
+        <a href="#myCarousel" class="carousel-control-prev bg-primary" role="button" data-slide="prev">
+         <span class="carousel-control-prev-icon"></span></a>
+
+        <a href="#myCarousel" class="carousel-control-next bg-primary" role="button" data-slide="next">
+         <span class="carousel-control-next-icon"></span></a>
     </div>
+        </div>
+        </div>
+
 </div>
+
+
+<!-- start of camera streaming portion -->
+<main>
+<div class="container">
+
+    <div class="row row-content stream">
+        <div class="col-12 col-sm-8">
+    <div id="stream">
+    <!-- <img src="2.jpg" alt="" width="100%">  -->
+
+    <!-- <div class="carousel-caption"> -->
+        <h2>Click Below For Streaming
+        <span class="fa fa-arrow-down"></span></h2>
+        
+        <a href=""><img src="images/camera 2.png" id="cam" alt=""></a>
+    <!-- </div> -->
+</div>
+</div>
+</div>
+</div>
+</main>
+
+<!-- Footer Portions -->
+<footer id="footer" class="jumbotron">
+
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-sm-4">
+
+                <ul>
+                    <li><a href="F:\WEB DEVELOPMENT\Small Projects\Software Engineering Project\Login Page\index.html" title="Home">
+                        <i class="fa fa-home fa-lg"></i> </a></li>
+                    <li><a href="#" title="About"><i class="fa fa-info fa-lg"></i></a></li>
+                    <li><a href="#" title="Contect"><i class="fa fa-address-card fa-lg"></i></a></li>
+                    <li><a href="#" title="Departments"><i class="fa fa-building-o fa-lg"></i></a></li>    
+                </ul>
+            </div>
+            <div class="col-12 col-sm-8">
+                <p>© copyright 2019 are reserved for the orginization</p>
+
+            </div>
+
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-3">
+                <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+
+</body>
+</html>
