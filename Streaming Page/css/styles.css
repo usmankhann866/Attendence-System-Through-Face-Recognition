@@ -136,7 +136,13 @@ footer li{
     color: wheat;
   }
 
+  #copywrite{
 
+    padding-top: 30px;
+    text-align: center;
+    padding-left: 25px;
+  }
+   
 
   /* Bouncing Arrow button */
 

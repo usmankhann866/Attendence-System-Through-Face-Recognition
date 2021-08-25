@@ -1,3 +1,61 @@
+
+// Form Animation messages
+
+        // show password option
+
+//         $(".toggle-password").click(function() {
+
+//         $(this).toggleClass("fa-eye fa-eye-slash");
+//         var input = $($(this).attr("toggle"));
+        
+//     if (input.attr("type") == "password") {
+          
+//             input.attr("type", "text");
+//   }   
+//     else {
+  
+//     input.attr("type", "password");
+// }
+// });
+
+
+// tooltip for inputs and button fields
+
+$(document).ready(function(){    
+ 
+ $("#uName").tooltip({
+ 
+          track:true,
+          content: "Your Username contain alphabet, numbers, underscore, dot",
+          show: {effect: "highlight", duration: "4000"},
+          hide: {effect: "explode", duration: "4000"}
+ 
+         });
+ 
+ $("#pwd").tooltip({
+ 
+          track:true,
+          content: "Your Password length must be greater than 7",
+          show: {effect: "highlight", duration: "5000"},
+          hide: {effect: "explode",   duration: "4000"}
+ 
+         });
+ 
+ $("#btn").tooltip({
+ 
+          track:true,
+          content: "submit the form after filling",
+          show: {effect: "highlight", duration: "4000"},
+          hide: {effect: "explode",   duration: "4000"}
+ 
+         });
+        });     
+
+
+
+
+// Form validation
+
 function Validation(){
 
 var userName = document.getElementById('uName').value;

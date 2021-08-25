@@ -2,15 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Login Page</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap-social.css"> -->
+    <link rel="stylesheet" href="F:/WEB DEVELOPMENT/Bootstrap 4/Bootstrap/Bootstrap4/conFusion/node_modules/bootstrap-social/bootstrap-social.css">
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="F:/WEB DEVELOPMENT/Bootstrap 4/Bootstrap/Bootstrap4/conFusion/node_modules/font-awesome/css/font-awesome.min.css">
+   
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> -->
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="F:/WEB DEVELOPMENT/JAVASCRIPT/Telusko/Codes/JQUERY UI/jqueryUi/jquery-ui.css">
     <link rel="stylesheet" href="F:/WEB DEVELOPMENT/JAVASCRIPT/Telusko/Codes/JQUERY UI/jqueryUi/jquery-ui.structure.css">
     <link rel="stylesheet" href="F:/WEB DEVELOPMENT/JAVASCRIPT/Telusko/Codes/JQUERY UI/jqueryUi/jquery-ui.theme.css">
@@ -21,97 +26,46 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
     <script src="F:\WEB DEVELOPMENT\JAVASCRIPT\Telusko\Codes\JQUERY Work\jquery.js"></script>
     <script src="F:/WEB DEVELOPMENT/JAVASCRIPT/Telusko/Codes/JQUERY UI/jqueryUi/jquery-ui.js"></script>
 
-    <script>
-        // show password option
-
-//         $(".toggle-password").click(function() {
-
-//         $(this).toggleClass("fa-eye fa-eye-slash");
-//         var input = $($(this).attr("toggle"));
-        
-//     if (input.attr("type") == "password") {
-          
-//             input.attr("type", "text");
-//   }   
-//     else {
-  
-//     input.attr("type", "password");
-// }
-// });
-
-
-// tooltip for inputs and button fields
-
-$(document).ready(function(){    
- 
- $("#uName").tooltip({
- 
-          track:true,
-          content: "Your Username contain alphabet, numbers, underscore, dot",
-          show: {effect: "highlight", duration: "4000"},
-          hide: {effect: "explode", duration: "4000"}
- 
-         });
- 
- $("#pwd").tooltip({
- 
-          track:true,
-          content: "Your Password length must be greater than 7",
-          show: {effect: "highlight", duration: "5000"},
-          hide: {effect: "explode",   duration: "4000"}
- 
-         });
- 
- $("#btn").tooltip({
- 
-          track:true,
-          content: "submit the form after filling",
-          show: {effect: "highlight", duration: "4000"},
-          hide: {effect: "explode",   duration: "4000"}
- 
-         });
-        });     
-        
-    </script>
-
+    
 </head>
+
 <body>
 
-    <!-- Navbar Portion -->
+     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
 
-    <header>
-        
-            <nav class="navbar navbar-default fixed-top">
+                <div class="container">
+                    <a href="#" class="navbar-brand mr-5"><img src="images/uetp.png" alt="" width="60px" height="60px"><span id="projName">Attendance System</span> </a>
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Nav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="container-fluid">
-                    <a href="#" class="navbar-brand"><img src="uetp.png" alt="" width="100px" height="100px"><span id="projName">Student Attendance System Through Face Recognition</span> </a>
-                    <div class="navbar navbar-expand-sm">
-
-                    <ul class="nav nav-navbar navbar-right">
-                        <li class="nav-item"><a href="#" class="nav-link">Home</a> </li>
+                    <div class="collapse navbar-collapse" id="Nav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a href="#" class="nav-link">Home</a> </li>
                         <li class="nav-item"><a href="F:\WEB DEVELOPMENT\Small Projects\Software Engineering Project\About\About.html" class="nav-link">About</a> </li>
                         <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Departments</a>
                         
                             <ul class="dropdown-menu">
                                
-                                <li class="dropdown-item "><a href="#" class="text-secondary">Computer Science & IT</a> </li>
-                                <li class="dropdown-item"><a href="#" class="text-secondary">Computer System Engineering </a> </li>
-                                <li class="dropdown-item"><a href="#" class="text-secondary">Mechatronics Engineering </a> </li>
-                                <li class="dropdown-item"><a href="#" class="text-secondary">Electrical Engineering </a> </li>
-                                <li class="dropdown-item"><a href="#" class="text-secondary">Mechinical Engineering </a> </li>
-                                <li class="dropdown-item"><a href="#" class="text-secondary">Civil Engineering </a> </li>
+                                <li class="dropdown-item "><a href="#">Computer Science & IT</a> </li>
+                                <li class="dropdown-item"><a href="#" >Computer System Engineering </a> </li>
+                                <li class="dropdown-item"><a href="#" >Mechatronics Engineering </a> </li>
+                                <li class="dropdown-item"><a href="#" >Electrical Engineering </a> </li>
+                                <li class="dropdown-item"><a href="#" >Mechinical Engineering </a> </li>
+                                <li class="dropdown-item"><a href="#" >Civil Engineering </a> </li>
                                 
                             </ul>
                         </li>
                         <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contects</a>
                         
                             <ul class="dropdown-menu">
-                                <li class="dropdown-item"><a href="https://www.uetpeshawar.edu.pk/" class="text-secondary" target="blank">emailhelp@uetpeshawar.edu.pk</a> </li>
-                                <li class="dropdown-item"><a href="#" class="text-secondary">+92-321-9122761</a> </li>
+                                <li class="dropdown-item"><a href="https://www.uetpeshawar.edu.pk/" target="blank">emailhelp@uetpeshawar.edu.pk</a> </li>
+                                <li class="dropdown-item"><a href="#">+92-321-9122761</a> </li>
 
                             </ul>
                         </li>
@@ -120,47 +74,147 @@ $(document).ready(function(){
      
                     </ul>    
 
-                    </div>
+
+                </div>
+            </div>
+            </nav>
+
+
+           
+ 
+        <header class="jumbotron">
+            <div class="container">
+            <div class="row">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                <h1 class="jumbH1">Attendance System</h1>
+                <p>It is an Attendance System for employees, Students of any orginization.
+                   Those employees and students are present whose face are recognized by the system else are absent.
+                   It is a face recognition attendance system.
+
+                </p>
                 </div>
 
-            </nav>
-        </div>
+                <div class="col-12 col-sm-6">
+
+                </div>
+            </div>
+</div>
+        </div>       
+    
+
     </header>
+
+   
 
     
     <!-- Apply form -->
-
-    <div class="container-fluid">
-        <img src="p1 (1).jpg" alt="" width="100%" >
-        <div class="carousel-caption" class="centered">
-        <div class="wrapper">
-            <h2>Teacher Login</h2>
-            
-            <div id="error_message"></div>
-
-            <form id="myForm" action="F:\WEB DEVELOPMENT\Small Projects\Software Engineering Project\Streaming Page\stream.html" onsubmit="return Validation()"  method="post"  action="connection.php">
-                <label for="Email" id="lbl">Email</label>
-                <div>
-                    
-                    <input type="text" id="uName" placeholder="Enter Your Email" title="">
-                    <i class="far fa-envelope"></i>
+        <!-- <img src="p1 (1).jpg" alt="" width="100%" > -->
+        
+            <div class="container">
+                <div class="row row-content bg-success">
+                <div class="col-12">
+                <h2 class="teachLogin text-white">Teacher Login</h2>
                 
-                </div><br><br>
+            <!-- <img src="images/p1 (1).jpg" alt="" width="100" >
+             <div class="carousel-caption">
+            <h2 class="teachLogin text-white">Teacher Login</h2>
+            </div> -->
+           
+            </div>
+            
+            <div class="col-12 col-md">
+            <div id="error_message"></div>
+            </div>
 
-                <label for="password" id="lbl2">Password</label>
-                <div>
-                   
-                    <input type="password" id="pwd" placeholder="Enter Your Password" title="">
-                    <i class="fa fa-eye showpwd" id="myPass" onClick="showPwd('pwd', this)"></i>
+            <!-- Form goes here -->
+            <div class="col-12 col-md-7">
+
+            <form id="myForm" class="form " action="F:\WEB DEVELOPMENT\Small Projects\Software Engineering Project\Streaming Page\stream.html" onsubmit="return Validation()"  method="post"  action="connection.php">
+             
+                <div class="form-group row">
+        
+              <label for="Email" id="lbl" class="col-md-2 col-form-label">Email</label>
+            
+                <div class="col-12 col-md-8">
                     
-                </div><br><br>
+                    <input type="text" class="form-control" id="uName" placeholder="Enter Your Email" title="">
+                    <!-- <i class="far fa-envelope"></i> -->
+                </div>
+                </div>
+                
+                <div class="form-group row">
+                
+                <label for="password" id="lbl2" class=" col-md-2 col-form-label">Password</label>
 
-                <button type="submit" name="submit" id="btn" title="">Log In</button>
+                <div class="col-12 col-md-8">
+                   
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter Your Password" title="">
+                    <!-- <i class="fa fa-eye showpwd" id="myPass" onClick="showPwd('pwd', this)"></i> -->
+                    
+                </div>
+                </div>
+                
+                <div class="form-group row">
+                  <div class="offset-md-2 col-md-8">            
+
+                <button type="submit" name="submit" class="btn btn-success btn-lg" id="btn" title="">Log In</button>
+                <a href="Sign Up/Sign Up.html" type="submit" name="submit" class="btn btn-success btn-lg" id="btn2" title="">Sign Up</a>
+            </div>
+            </div>
             </form>
+            </div>
         </div>
 
-    </div>
+   
 </div>
+
+<footer id="footer" class="jumbotron">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12 col-sm-4">
+
+                <ul>
+                    <li><a href="F:\WEB DEVELOPMENT\Small Projects\Software Engineering Project\Login Page\index.html" title="Home">
+                        <i class="fa fa-home fa-lg"></i> </a></li>
+                    <li><a href="#" title="About"><i class="fa fa-info fa-lg"></i></a></li>
+                    <li><a href="#" title="Contect"><i class="fa fa-address-card fa-lg"></i></a></li>
+                    <li><a href="#" title="Departments"><i class="fa fa-building-o fa-lg"></i></a></li>    
+                </ul>
+            </div>
+
+            <div class="col-12 col-sm-4 justify-content-right">
+                <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+            </div>
+
+            <div class="col-12 col-sm-4">
+
+                <h5>Address</h5>
+                    <address>
+		              University of Engineering and Technology<br>
+                      Peshawar, Pakistan <br>
+		              <i class="fa fa-phone fa-lg"></i> : +92-321-9122761<br>
+		              <i class="fa fa-envelope fa-lg"></i> : <a href="" target="blank">EMAILHELP@UETPESHAWAR.EDU.PK</a>
+		           </address>
+            </div>
+        </div>
+
+        <!-- <div class="row justify-content-center"> -->
+            
+
+        <!-- </div> -->
+
+        <div class="col-12 col-sm-8">
+            <p id="copywrite">© copyright 2019 are reserved for the orginization</p>
+
+        </div>
+    </div>
+</footer>
 
 </body>
 
