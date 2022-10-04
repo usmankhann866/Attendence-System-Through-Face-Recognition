@@ -7,18 +7,21 @@
     <title>Login Page</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="css/bootstrap-social.css"> -->
-    <link rel="stylesheet" href="F:/WEB DEVELOPMENT/Bootstrap 4/Bootstrap/Bootstrap4/conFusion/node_modules/bootstrap-social/bootstrap-social.css">
-    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="F:/WEB DEVELOPMENT/Bootstrap 4/Bootstrap/Bootstrap4/conFusion/node_modules/font-awesome/css/font-awesome.min.css">
-   
+      <!-- <link rel="stylesheet" href="css/bootstrap-social.css"> -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css" integrity="sha512-sopmFEmRVsWt542K+yzH3FQ1KJfdosOJG+bGLs9ZJT07b/3gUxRA9ICuJg2JtoZ9WeknAUuwJ0ggnmrV1YL6kQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> -->
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="F:/WEB DEVELOPMENT/JAVASCRIPT/Telusko/Codes/JQUERY UI/jqueryUi/jquery-ui.css">
-    <link rel="stylesheet" href="F:/WEB DEVELOPMENT/JAVASCRIPT/Telusko/Codes/JQUERY UI/jqueryUi/jquery-ui.structure.css">
-    <link rel="stylesheet" href="F:/WEB DEVELOPMENT/JAVASCRIPT/Telusko/Codes/JQUERY UI/jqueryUi/jquery-ui.theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" 
+    integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- <link rel="stylesheet" href="F:/WEB DEVELOPMENT/JAVASCRIPT/Telusko/Codes/JQUERY UI/jqueryUi/jquery-ui.theme.css"> -->
 
 
 <!-- Javascript Part -->
@@ -27,8 +30,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
     <script src="js/script.js"></script>
-    <script src="F:\WEB DEVELOPMENT\JAVASCRIPT\Telusko\Codes\JQUERY Work\jquery.js"></script>
-    <script src="F:/WEB DEVELOPMENT/JAVASCRIPT/Telusko/Codes/JQUERY UI/jqueryUi/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js" integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"
+            integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
 
     
 </head>
@@ -38,17 +42,19 @@
      <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
 
                 <div class="container">
-                    <a href="#" class="navbar-brand mr-5"><img src="images/uetp.png" alt="" width="60px" height="60px"><span id="projName">Attendance System</span> </a>
+                    <a href="#" class="navbar-brand mr-auto"><img class="logo" src="images/uetp.png" alt="" width="60px"
+                         height="60px"><span id="projName">Attendance System</span> </a>
                     
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Nav">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
                     <div class="collapse navbar-collapse" id="Nav">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item active"><a href="#" class="nav-link">Home</a> </li>
-                        <li class="nav-item"><a href="F:\WEB DEVELOPMENT\Small Projects\Software Engineering Project\About\About.html" class="nav-link">About</a> </li>
-                        <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Departments</a>
+                        <li class="nav-item"><a href="../About/About.html" class="nav-link">About</a> </li>
+                        <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle"
+                             data-toggle="dropdown">Departments</a>
                         
                             <ul class="dropdown-menu">
                                
@@ -70,7 +76,7 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-search"></i></a> </li>
+                        <!-- <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-search"></i></a> </li> -->
      
                     </ul>    
 
@@ -130,7 +136,8 @@
             <!-- Form goes here -->
             <div class="col-12 col-md-7">
 
-            <form id="myForm" class="form " action="F:\WEB DEVELOPMENT\Small Projects\Software Engineering Project\Streaming Page\stream.html" onsubmit="return Validation()"  method="post"  action="connection.php">
+            <form id="myForm" class="form " action="../Streaming Page/stream.html" 
+            onsubmit="return Validation()"  method="post">
              
                 <div class="form-group row">
         
@@ -159,7 +166,7 @@
                   <div class="offset-md-2 col-md-8">            
 
                 <button type="submit" name="submit" class="btn btn-success btn-lg" id="btn" title="">Log In</button>
-                <a href="Sign Up/Sign Up.html" type="submit" name="submit" class="btn btn-success btn-lg" id="btn2" title="">Sign Up</a>
+                <a href="./Sign Up/SignUp.html" type="submit" name="submit" class="btn btn-success btn-lg" id="btn2" title="">Sign Up</a>
             </div>
             </div>
             </form>
@@ -169,6 +176,7 @@
    
 </div>
 
+<!-- Footer Portions -->
 <footer id="footer" class="jumbotron">
     <div class="container">
         <div class="row">
@@ -185,21 +193,25 @@
             </div>
 
             <div class="col-12 col-sm-4 justify-content-right">
-                <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google fa-lg"></i></a>
-                <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
-                <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
-                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
-                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-whatsapp" href="http://github.com/"><i class="fab fa-whatsapp"></i>
+                </a>
+                <a class="btn btn-social-icon btn-github" href="http://github.com/"><i class="fab fa-github"></i></a>
+                <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fab fa-twitter"></i>
+                </a>
+                
             </div>
-
+            
             <div class="col-12 col-sm-4">
 
                 <h5>Address</h5>
                     <address>
 		              University of Engineering and Technology<br>
                       Peshawar, Pakistan <br>
-		              <i class="fa fa-phone fa-lg"></i> : +92-321-9122761<br>
-		              <i class="fa fa-envelope fa-lg"></i> : <a href="" target="blank">EMAILHELP@UETPESHAWAR.EDU.PK</a>
+		              <i class="fa fa-phone fa-lg"></i> : +92-333-6642801<br>
+		              <i class="fa fa-envelope fa-lg"></i> : <a href="" target="blank">usmankhann866@gmail.com</a>
 		           </address>
             </div>
         </div>
@@ -215,7 +227,10 @@
         </div>
     </div>
 </footer>
+<!-- End of Footer -->
 
+</div>
+  <!-- End of .container -->
 </body>
 
 </html>

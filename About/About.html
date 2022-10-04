@@ -8,10 +8,12 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="css/bootstrap-social.css"> -->
-    <link rel="stylesheet" href="F:/WEB DEVELOPMENT/Bootstrap 4/Bootstrap/Bootstrap4/conFusion/node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css" integrity="sha512-sopmFEmRVsWt542K+yzH3FQ1KJfdosOJG+bGLs9ZJT07b/3gUxRA9ICuJg2JtoZ9WeknAUuwJ0ggnmrV1YL6kQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="F:/WEB DEVELOPMENT/Bootstrap 4/Bootstrap/Bootstrap4/conFusion/node_modules/font-awesome/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/styles.css">
@@ -24,10 +26,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
     <script src="js/script.js"></script>
-    <script src="F:\WEB DEVELOPMENT\JAVASCRIPT\Telusko\Codes\JQUERY Work\jquery.js"></script>
-    <script src="F:/WEB DEVELOPMENT/JAVASCRIPT/Telusko/Codes/JQUERY UI/jqueryUi/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js" integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"
+            integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
 
-</head>
+    </head>
 <body>
 <header>
     <!-- Navbar Portion -->
@@ -43,8 +46,9 @@
                    </button>
                    <div id="Nav" class="collapse navbar-collapse">
 
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><a href="F:\WEB DEVELOPMENT\Small Projects\Software Engineering Project\Login Page\index.html" class="nav-link"><i class="fa fa-home" title="home"></i></a> </li>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="../Login Page/index.html" class="nav-link">
+                            <i class="fa fa-home" aria-hidden="true"></i></a> </li>
                         <li class="nav-item active"><a href="#" class="nav-link">About</a> </li>
                         <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Departments</a>
                         
@@ -68,7 +72,7 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-search"></i></a> </li>
+                        <!-- <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-search"></i></a> </li> -->
      
                     </ul>    
 
@@ -216,8 +220,8 @@
                         <div class="card card2">
                             <div class="card-header" role="tab" id="cheif">
                                 <img class="d-flex img-thumbnail align-self center" data-toggle="collapse" data-target="#usman"
-                                 src="images/usman2.jpg" alt="uthappizza">
-                                <h3 id="usman" >Mohammad Usman <small>Web Developer</small></h3>
+                                 src="images/usman2.jpg" alt="uthappizza" height="200px">
+                                <h3 id="usman" >Mohammad Usman <small>Web Developer</small></h3> 
                             </div>
 
                         
@@ -240,7 +244,7 @@
                         <div class="card card2">
                             <div class="card-header" role="tab" id="Director">
                                 <img class="d-flex img-thumbnail align-self center"  data-toggle="collapse" data-target="#taneem" 
-                                src="images/Taneem.jpg" height="70%" alt="Taneem Ullah Jan">
+                                src="images/Taneem.jpg" height="200px" alt="Taneem Ullah Jan">
                                 <h3 id="usman">Taneem Ullah Jan <small>Artificial Intelligence Researcher</small></h3>
                             </div>
                        
@@ -262,7 +266,7 @@
                     <div class="card">
                         <div class="card-header" role="tab" id="Content">
                             <img class="d-flex img-thumbnail align-self center"  data-toggle="collapse" data-target="#nadir" 
-                            src="images/Nadir.jpg" height="70%" alt="Nadir Shah">
+                            src="images/Nadir.jpg" height="200px" alt="Nadir Shah">
                             <h3 id="usman">Nadir Shah <small>Content Writer</small></h3>
                         </div>
                    
@@ -308,11 +312,15 @@
             </div>
 
             <div class="col-12 col-sm-4 justify-content-right">
-                <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google fa-lg"></i></a>
-                <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
-                <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
-                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
-                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                <a class="btn btn-social-icon btn" href="http://github.com/"><i class="fab fa-whatsapp"></i>
+                </a>
+                <a class="btn btn-social-icon btn-github" href="http://github.com/"><i class="fab fa-github"></i></a>
+                <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fab fa-twitter"></i>
+                </a>
+                
             </div>
 
             <div class="col-12 col-sm-4">
@@ -321,8 +329,8 @@
                     <address>
 		              University of Engineering and Technology<br>
                       Peshawar, Pakistan <br>
-		              <i class="fa fa-phone fa-lg"></i> : +92-321-9122761<br>
-		              <i class="fa fa-envelope fa-lg"></i> : <a href="" target="blank">EMAILHELP@UETPESHAWAR.EDU.PK</a>
+		              <i class="fa fa-phone fa-lg"></i> : +92-333-6642801<br>
+		              <i class="fa fa-envelope fa-lg"></i> : <a href="" target="blank">usmankhann866@gmail.com</a>
 		           </address>
             </div>
         </div>
@@ -333,7 +341,7 @@
         <!-- </div> -->
 
         <div class="col-12 col-sm-8">
-            <p id="copywrite">© copyright 2019 are reserved for the orginization</p>
+            <p id="copywrite">© copyright 2020 are reserved for the orginization</p>
 
         </div>
     </div>

@@ -13,7 +13,7 @@ background-image:url("../images/bg\ 5.jpg");
 
 background-image: url("../images/img2\ \(1\).jpg");
 margin-bottom: 0px;
-
+padding: 16px;
 
 }
 nav li a{
@@ -59,20 +59,20 @@ font-family:'Times New Roman', Times, serif;
 
 padding: 20px;
 width: 50%;
-margin: 80px 0 0 32%;
+/* margin: 80px 0 0 3%; */
 background-color: white;
 border: 8px solid black;
-transform: translate(-10%, -25%);
+transform: translate(100%, 25%);
 border-radius: 30px;
 
 }
 
-h2{
+.cam_head{
 
-/* transform: translate(-5%, -100%); */
-margin-bottom: 10%;
+transform: translate(45%, 45%);
+/* margin-bottom: 10%;
 margin-left: 23%; 
-margin-top: 40px;
+margin-top: 40px; */
 font-weight: bold;
 font-family:Georgia, 'Times New Roman', Times, serif;
 color: yellowgreen;
